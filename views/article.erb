@@ -1,0 +1,6 @@
+<div class="item">
+  <h3><%= @item.title %></h3>
+  <p><small><%= @item.date_published %> <%= @item.author %> (<a href="<%= @item.url %>" target="_blank">View original</a>)</small></p>
+
+  <%= @item.content.gsub("http://www.stuff.co.nz/content/", "http://stuff.co.nz/content/").gsub("http://www.stuff.co.nz/", "/article?url=http://www.stuff.co.nz/") %>
+</div>
