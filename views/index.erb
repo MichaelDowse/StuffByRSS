@@ -1,6 +1,6 @@
 <% @rss.items.each do |item| %>
   <div class="item">
-    <a href="/article?url=<%= URI.encode(item.link) %>"><h3><%= item.title %></h3></a>
+    <a href="/article?url=<%= URI.encode(item.link) %>" class="homepage-link"><h3><%= item.title %></h3></a>
     <p><small><%= item.pubDate %> <%= item.author %></small></p>
     <p><%= item.description %></p>
   </div>
